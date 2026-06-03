@@ -24,7 +24,7 @@ h1 {
 .apps{
     display: grid;
     grid-template-columns: repeat(3, 3fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .app-slot{

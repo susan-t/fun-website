@@ -42,7 +42,7 @@ backspace.addEventListener("click", () => {
 // ENTER BUTTON
 enterBtn.addEventListener("click", () => {
     if(input === correctCode){
-        window.location.href = "nextpage.html";
+        window.location.href = "home.html";
     }
     else{
         alert("wrong code :(");
@@ -50,3 +50,24 @@ enterBtn.addEventListener("click", () => {
         updateHearts();
     }
 });
+
+// DATE COUNTDOWN
+const counterElement = document.getElementById("days-left");
+if(counterElement){
+  const targetDate = new Date("April 8, 2027");
+  function updateDayCountdown(){
+    const now = new Date();
+    const timeDifference = targetDate - now;
+    const daysLeft = Math.floor(
+      timeDifference / (1000 * 60 * 60 * 24)
+    );
+    if(daysLeft >= 0){
+      counterElement.textContent = daysLeft;
+    }
+    else{
+      counterElement.textContent = "0";
+    }
+  }
+  updateDayCountdown();
+  setInterval(updateDayCountdown, 86400000);
+}
