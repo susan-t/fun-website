@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffd6ea;
+    font-family: Georgia, serif;
+}
+
+h1 {
+    color: #ff4fa3;
+    font-size: 50px;
+}
+
+.home-container{
+    width:800px;
+    background:#f3f3f3;
+    border-radius:38px;
+    padding:30px;
+    text-align:center;
+}
+
+.apps{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 10px;
+}
+
+.app-slot{
+    background:#f4ddeb;
+    height: 100px;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+}
+
