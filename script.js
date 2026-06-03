@@ -67,7 +67,7 @@ if (daysLeft) {
     const hours = Math.floor(
       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     );
-    
+
     daysLeft.innerHTML = days; 
     // If countdown is over
     if (distance < 0) {
@@ -77,3 +77,45 @@ if (daysLeft) {
 
   }, 1000);
 }
+
+// IMAGE SLIDESHOW
+
+let slides = [];
+let currentIndex = 0;
+
+// Grab slideshow container
+const slideshow = document.getElementById("slideshow");
+
+// Fetch slideshow data
+async function loadSlideshow() {
+  try {
+    const response = await fetch("slides.json");
+    slides = await response.json();
+
+    if (slides.length > 0) {
+      updateSlide();
+    }
+  } catch (error) {
+    console.error("Error loading the JSON data:", error);
+  }
+}
+
+// Update background image
+function updateSlide() {
+  slideshow.style.backgroundImage = `url(${slides[currentIndex].src})`;
+}
+
+// Click slideshow to go to next slide
+slideshow.addEventListener("click", () => {
+  currentIndex++;
+
+  // Loop back to first image
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+  }
+
+  updateSlide();
+});
+
+// Initialize slideshow
+loadSlideshow();
