@@ -1,136 +1,99 @@
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Georgia, serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Georgia, serif;
 }
-
 
 /* PAGE */
 
 body{
-  min-height:100vh;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  background:#f4ddeb;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4ddeb;
 }
 
 
 /* MAIN BOX */
-
 .container{
-  width:450px;
-
-  background:#f3f3f3;
-
-  border-radius:38px;
-
-  padding:30px;
-
-  text-align:center;
+    width:450px;
+    background:#f3f3f3;
+    border-radius:38px;
+    padding:30px;
+    text-align:center;
 }
 
 
 /* TITLE */
 
 .title{
-  color:#ff82cb;
-
-  font-size:22px;
-  font-weight:normal;
-
-  margin-bottom:30px;
+    color:#ff82cb;
+    font-size:22px;
+    font-weight:normal;
+    margin-bottom:30px;
 }
 
 
 /* HEARTS */
-
 .hearts{
-  display:flex;
-
-  justify-content:space-between;
-
-  margin-bottom:35px;
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:35px;
 }
 
 .heart{
-  font-size:42px;
-
-  color:#f6b8da;
-
-  transition:0.2s;
+    font-size:42px;
+    color:#f6b8da;
+    transition:0.2s;
 }
 
 .heart.filled{
-  color:#ff3d93;
+    color:#ff3d93;
 }
 
 
 /* KEYPAD */
-
 .keypad{
-  width:100%;
-
-  display:grid;
-
-  grid-template-columns:repeat(3, 1fr);
-
-  gap:15px;
-
-  margin-bottom:25px;
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:15px;
+    margin-bottom:25px;
 }
 
 
 /* BUTTONS */
-
 .btn{
-  height:65px;
-
-  border:none;
-  border-radius:20px;
-
-  background:#f4deee;
-
-  color:#ff82cb;
-
-  font-size:28px;
-
-  cursor:pointer;
+    height:65px;
+    border:none;
+    border-radius:20px;
+    background:#f4deee;
+    color:#ff82cb;
+    font-size:28px;
+    cursor:pointer;
 }
 
 
 /* EMPTY SPACE UNDER 7 */
-
 .empty{
-  visibility:hidden;
+    visibility:hidden;
 }
-
 
 /* BACKSPACE */
-
 #backspace{
-  font-size:18px;
+    font-size:18px;
 }
 
-
 /* ENTER BUTTON */
-
 .enter-btn{
-  width:65%;
-
-  height:58px;
-
-  border:none;
-  border-radius:20px;
-
-  background:#f4deee;
-
-  color:#ff82cb;
-
-  font-size:24px;
-
-  cursor:pointer;
+    width:65%;
+    height:58px;
+    border:none;
+    border-radius:20px;
+    background:#f4deee;
+    color:#ff82cb;
+    font-size:24px;
+    cursor:pointer;
 }
