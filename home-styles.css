@@ -11,6 +11,13 @@ body {
 h1 {
     color: #FFA1E2;
     font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    /* margin-bottom: 2px; */
+}
+
+h3{
+    margin: 0px;
 }
 
 .home-container{
@@ -40,6 +47,35 @@ h1 {
     padding: 5px;
     font-size: 50px;
     color: #FFA1E2;
-    padding-bottom: 100px;
+    display: block;
 }
 
+#date-text{
+    color: #FFA1E2;
+}
+
+#countdown{
+    /* border: 1px solid #FFA1E2;
+    border-radius:20px;
+    padding-bottom: 10px */
+    display: block;
+    background:#ffffff;
+    border-radius:10px;
+    padding-bottom: 15px;
+    text-align:center;
+}
+
+#letters, #gallery, #game, #puzzle, #music{
+    font-size: 40px;
+    display: block;
+    color: #FFA1E2;
+    text-align: center;
+    align-content: center;
+    height: 100px;
+}
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
