@@ -1,4 +1,5 @@
-const correctCode = "040825";
+// const correctCode = "040825";
+const correctCode = "120624";
 
 let input = "";
 
